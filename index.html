@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <figure>
+    <header class="cabecalho">
+        <div class="container">
+            <figure class="cabecalho__logoPicpro">
                 <img src="assets/img/logo-picpro.png" alt="Logo PicPro" />
             </figure>
-            <figure>
+            <figure class="cabecalho__logoKenzie">
                 <img src="assets/img/logo-kenzie.png" alt="Logo Kenzie" />
             </figure>
         </div>
@@ -22,8 +22,8 @@
 
     <!-- Conteúdo principal da página -->
     <main>
-        <section>
-            <div>
+        <section class="secaoDetalhesConta">
+            <div class="secaoDetalhesConta__sobreUsuario">
                 <figure>
                     <img src="assets/img/usuario.png" alt="Ícone do Usuário" />
                 </figure>
@@ -31,43 +31,43 @@
                     Olá, <strong>@diogocqr</strong>
                 </p>
             </div>
-            <div>
+            <div class="secaoDetalhesConta__sobreSaldo">
                 <p>Saldo PicPay, <strong>R$ 0,00</strong> </p>
                 <button>Extrato</button>
             </div>
-            <ul>
-                <li>
+            <ul class="secaoDetalhesConta__opcoesTransacoes">
+                <li class="secaoDetalhesConta__itemTransacao">
                     <img src="assets/img/qrcode.png" alt="Ícone QR Code">
                     <p>QR CODE</p>
                 </li>
-                <li>
+                <li class="secaoDetalhesConta__itemTransacao">
                     <img src="assets/img/pix.png" alt="Ícone Pix">
                     <p>Pix</p>
                 </li>
-                <li>
+                <li class="secaoDetalhesConta__itemTransacao">
                     <img src="assets/img/codigo.png" alt="Ícone Pagar Boleto">
                     <p>Pagar Boleto</p>
                 </li>
-                <li>
+                <li class="secaoDetalhesConta__itemTransacao">
                     <img src="assets/img/cobrar-icon.png" alt="Ícone Cobrar">
                     <p>Cobrar</p>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="secaoTransacao">
 
             <!-- GERAL -->
-            <div>
+            <div class="container">
 
                 <!-- Seleção da forma de pagamento-->
-                <div>
+                <div class="secaoTransacao__avisoSelecao">
                     <p>Selecione a forma de pagamento</p>
                     <img src="assets/img/banner.png" alt="">
                 </div>
 
                 <!-- QR CODE-->
-                <div>
+                <div class="secaoTransacao__qrCode">
                     <img src="assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                     <p>@diogocqr</p>
                     <button>Cobre um amigo</button>
@@ -75,16 +75,20 @@
                 </div>
 
                 <!-- PIX -->
-                <div>
+                <div class="secaoTransacao__pix">
                     <img src="assets/img/pix-logo.png" alt="Pix Logo">
-                    <div>
-                        <img src="assets/img/pix1.png" alt="Icone Opção PIX">
+                    <div class="secaoTransacao__boxOpcao">
+                        <img src="./assets/img/pix1.png" alt="Ícone opção pix">
+                        <p>Envie por CPF/CNPJ, telefone, e-mail ou chave aleatória</p>
                     </div>
-                    <p>Insira um código Pix Copia e Cola para enviar um pagamento.</p>
+                    <div class="secaoTransacao__boxOpcao">
+                        <img src="assets/img/pix1.png" alt="Icone Opção PIX">
+                        <p>Insira um código Pix Copia e Cola para enviar um pagamento.</p>
+                    </div>
                 </div>
 
                 <!-- Boleto -->
-                <div>
+                <div class="secaoTransacao__boleto">
                     <img src="assets/img/boleto.png" alt="Imagem boleto">
                     <h2>Pagar com código de barras</h2>
                     <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira pra pagar à vista.</p>
@@ -92,7 +96,7 @@
                 </div>
 
                 <!-- Cobrar -->
-                <div>
+                <div class="secaoTransacao__cobrar">
                     <img src="assets/img/cobrar.png" alt="Imagem cobrar">
                     <h2>Cobrar</h2>
                     <p>Divida a conta com os amigos de forma fácil</p>
@@ -108,32 +112,32 @@
         </section>
 
         <!-- Rodapé -->
-        <footer>
-            <ul>
-                <li>
+        <footer class="rodape">
+            <ul class="rodade__menuPrincipal">
+                <li class="rodade__menuItem">
                     <a href="#">
                         <img src="assets/img/inicio.png" alt="Icone Inicio">
                         Inicio
                     </a>
                 </li>
-                <li>
+                <li class="rodade__menuItem">
                     <a href="#">
                         <img src="assets/img/carteira-icon.png" alt="Icone Carteira">
                         Carteira
                     </a>
                 </li>
-                <li>
+                <li class="rodade__menuItem">
                     <a href="#">
                         <img src="assets/img/pagar.png" alt="Icone Pagar">
                         Pagar
                     </a>
                 </li>
-                <li>
+                <li class="rodade__menuItem">
                     <a href="#">
                         <img src="assets/img/notificacao.png" alt="Icone Notificação">
                         Notificação
                     </a>
-                </li>
+                </li class="rodade__menuItem">
                 <li>
                     <a href="#">
                         <img src="assets/img/bolsa.png" alt="Icone Store">
